@@ -18,7 +18,7 @@
 </head>
 <body>
     <section id="container" class="w-screen h-screen flex flex-col justify-center items-center">
-        <p class="text-4xl font-semibold tracking-wide">Haikal's Project ✨</p>
+        <p class="text-4xl font-semibold tracking-wide">Haikal's <span id="auto-type">Project</span> ✨</p>
 
         <div class="mt-7">
             <button class="w-96 h-14 border border-black rounded-lg text-xl tracking-wide hover:tracking-widest duration-200" type="button"><a href="/allproject/e-commerce.html">Syifacare</a></button>
@@ -49,5 +49,14 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#auto-type', {
+            strings: ['Art', 'Web Design'],
+            typeSpeed: 110,
+            backSpeed: 110,
+            loop: true
+        });
+    </script>
 </body>
 </html>
